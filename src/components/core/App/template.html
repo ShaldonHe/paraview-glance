@@ -59,7 +59,7 @@
         <span>{{ errors.length }}</span>
         <span v-show="!smallScreen">error(s)</span>
       </v-btn>
-      <v-btn
+      <!-- <v-btn
         :class="$style.toolbarButton"
         flat
         v-on:click="promptUserFiles"
@@ -90,10 +90,9 @@
         flat
         v-on:click="aboutDialog = true"
       >
-        <!-- width of other icons in toolbar -->
         <svg-icon icon="kitware-logo" width="24px" />
         <span v-show="!smallScreen">About</span>
-      </v-btn>
+      </v-btn> -->
     </v-toolbar>
 
     <v-content :class="$style.appContent">

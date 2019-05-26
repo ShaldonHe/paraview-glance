@@ -4,7 +4,7 @@
       left
       :disabled="smallScreen"
     >
-      <span :class="$style.noSelect">Reset camera</span>
+      <!-- <span :class="$style.noSelect">Reset camera</span>
       <v-btn
         slot="activator"
         icon
@@ -13,10 +13,10 @@
         v-on:click="resetCamera()"
       >
         <v-icon>filter_center_focus</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-tooltip>
     <div :class="$style.relative">
-      <v-tooltip
+      <!-- <v-tooltip
         left
         :disabled="smallScreen"
       >
@@ -32,8 +32,8 @@
         >
           <v-icon>crop</v-icon>
         </v-btn>
-      </v-tooltip>
-      <v-tooltip
+      </v-tooltip> -->
+      <!-- <v-tooltip
         left
         v-if="getAvailableActions().resetCrop"
         :disabled="smallScreen"
@@ -49,13 +49,13 @@
         >
           <v-icon>crop_free</v-icon>
         </v-btn>
-      </v-tooltip>
+      </v-tooltip> -->
     </div>
     <v-tooltip
       left
       :disabled="smallScreen"
     >
-      <span :class="$style.noSelect">Rotate camera left 90°</span>
+      <!-- <span :class="$style.noSelect">Rotate camera left 90°</span>
       <v-btn
         slot="activator"
         icon
@@ -64,13 +64,13 @@
         v-on:click="rollLeft()"
       >
         <v-icon>rotate_left</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-tooltip>
     <v-tooltip
       left
       :disabled="smallScreen"
     >
-      <span :class="$style.noSelect">Rotate camera right 90°</span>
+      <!-- <span :class="$style.noSelect">Rotate camera right 90°</span>
       <v-btn
         slot="activator"
         icon
@@ -79,14 +79,14 @@
         v-on:click="rollRight()"
       >
         <v-icon>rotate_right</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-tooltip>
     <v-tooltip
       left
       v-if="view.getProxyName() === 'View3D'"
       :disabled="smallScreen"
     >
-      <span :class="$style.noSelect">Reset Camera to Orientation {{orientationLabels()[0]}}</span>
+      <!-- <span :class="$style.noSelect">Reset Camera to Orientation {{orientationLabels()[0]}}</span>
       <v-btn
         slot="activator"
         icon
@@ -95,7 +95,7 @@
         v-on:click="updateOrientation('x')"
       >
         {{orientationLabels()[0]}}
-      </v-btn>
+      </v-btn> -->
     </v-tooltip>
     <v-tooltip
       left
@@ -158,16 +158,16 @@
         </v-card>
       </toolbar-sheet>
       <v-toolbar dark :class="$style.smallToolbar">
-        <v-select
+        <!-- <v-select
           dense
           flat
           :class="$style.viewTypeSelector"
           :items="viewTypes()"
           :value="viewType"
           @change="changeViewType"
-        />
+        /> -->
         <v-spacer />
-        <v-tooltip
+        <!-- <v-tooltip
           top
           :disabled="smallScreen"
         >
@@ -181,8 +181,8 @@
           >
             <v-icon>palette</v-icon>
           </v-btn>
-        </v-tooltip>
-        <v-tooltip
+        </v-tooltip> -->
+        <!-- <v-tooltip
           top
           :disabled="smallScreen"
         >
@@ -195,8 +195,8 @@
           >
             <v-icon>add_a_photo</v-icon>
           </v-btn>
-        </v-tooltip>
-        <v-tooltip
+        </v-tooltip> -->
+        <!-- <v-tooltip
           top
           v-if="!smallScreen && singleViewButton"
         >
@@ -209,7 +209,7 @@
           >
             <v-icon>fullscreen</v-icon>
           </v-btn>
-        </v-tooltip>
+        </v-tooltip> -->
         <v-tooltip
           top
           v-if="!smallScreen && flipViewButton"
